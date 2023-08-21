@@ -1,0 +1,333 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+p,
+li {
+    color: #000;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+
+}
+
+li {
+    list-style: none;
+
+}
+
+.main-wrapper {
+    width: 922px;
+    height: 465px;
+    margin: 0 auto;
+    background-color: #C4C4C4;
+    display: flex;
+}
+
+.left-block {
+    width: 198px;
+    height: 465px;
+    background-color: #C4C4C4;
+
+
+}
+
+.left-top-block {
+    width: 100%;
+    height: 232px;
+    border-bottom: 1px solid #000000;
+}
+
+.left-bottom-block {}
+
+.left-bottom-text {
+    margin-left: 32px;
+    margin-top: 11px;
+}
+
+.center-block {
+    width: 625px;
+    height: 465px;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.center-text {
+    margin-left: 15px;
+    margin-top: 12px;
+
+}
+
+.user-msg-form {
+    display: flex;
+    width: 603px;
+    height: 42px;
+    /* margin-top: 385px; */
+    margin-left: 10px;
+    background-color: rgb(252, 252, 252);
+}
+
+.center-msg-block {
+    width: 603px;
+    height: 390px;
+}
+
+.msg-block-item {
+    max-width: 137px;
+    max-height: 39px;
+    overflow-x: hidden;
+    background: #FFF;
+    margin: 10px;
+
+}
+
+.user-msg-form button {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-color: rgb(252, 252, 252);
+    cursor: pointer;
+    border: none;
+}
+
+.mail-img {
+    width: 30px;
+    height: 30px;
+
+}
+
+.user-msg {
+    width: 550px;
+    height: 39px;
+
+}
+
+.right-block {
+    width: 110px;
+    height: 465px;
+
+}
+
+.right-list {
+    margin-left: 15px;
+    margin-top: 12px;
+}
+
+.right-list-item+.right-list-item {
+    margin-top: 7px;
+}
+
+.profile-setting-btn,
+.profile-btn,
+.exit-btn ,.chat-create{
+    cursor: pointer;
+}
+
+/* Формы  */
+.form-register,
+.form-auth {
+    margin: 0 auto;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+}
+
+.form-register input,
+.form-auth input{
+width: 200px;
+height: 20px;
+margin: 0 auto;
+}
+
+.form-register input[type="submit"],
+.form-auth input[type="submit"]{
+    width: 200px;
+    height: 20px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+/* Форма настроек профиля */
+.popUp-profile-settings {
+    width: 310px;
+    height: 200px;
+    z-index: 10;
+    margin-left: 550px;
+    margin-top: -365px;
+    background-color: #e6eceb;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.popUp-profile-settings form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.popUp-profile-settings form input[type="text"] {
+    width: 210px;
+    height: 30px;
+
+}
+
+.popUp-profile-settings form input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+
+}
+
+.popUp-profile-settings form input[type='submit'] {
+    width: 210px;
+    height: 20px;
+    cursor: pointer;
+
+}
+
+/* Форма  профиля */
+
+.popUp-profile-block {
+    width: 210px;
+    height: 320px;
+    z-index: 21;
+    margin-left: 550px;
+    margin-top: -365px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #e6eceb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.popUp-profile-block img {
+    width: auto;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+.popUp-msg-settings,
+.popUp-GroupChat-create {
+    width: 210px;
+    height: 265px;
+    z-index: 21;
+    margin-left: 550px;
+    margin-top: -365px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #e6eceb;
+}
+
+
+
+.popUp-chat-sound,
+.chat-sound-popUp {
+    width: 290px;
+    height: 65px;
+    z-index: 21;
+    margin-left: 550px;
+    margin-top: -365px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #e6eceb;
+
+
+}
+
+.msg-sound-form {
+    display: flex;
+    align-items: center;
+}
+
+.popUp-chat-sound input[type="checkbox"],
+.chat-sound-popUp input[type="checkbox"] {
+    width: 25px;
+    height: 65px;
+    margin-right: 20px;
+}
+
+.MsgSound-disable {
+    color: red;
+}
+
+.MsgSound-active {
+    color: black;
+}
+
+.popUp-chat-sound input[type="submit"],
+.chat-sound-popUp input[type="submit"] {
+    margin-right: 20px;
+
+}
+
+.popUp-chat-sound input[type="checkbox"],
+.chat-sound-popUp input[type="checkbox"] {
+    margin-left: 20px;
+
+}
+
+.msg-settings-form,
+.GroupChat-create-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.msg-settings-form input,
+.GroupChat-create-form input {
+    margin: 10px;
+}
+
+
+.User-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.UserImg {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.friend-list-item {
+    margin: 12px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.active {
+    display: block;
+}
+
+.disible {
+    display: none;
+
+}
